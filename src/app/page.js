@@ -3,11 +3,12 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
-import ReactQuill from "react-quill";
+// import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { BeatLoader } from "react-spinners";
+import dynamic from "next/dynamic";
 
 const schema = yup
   .object({
@@ -60,6 +61,11 @@ export default function Page() {
 }
 
 const Editor = ({ generatedDocument, setCurrentScreen }) => {
+  const ReactQuill = useMemo(
+    () => dynamic(() => import("react-quill"), { ssr: false }),
+    []
+  );
+
   const [content, setContent] = useState(`${generatedDocument.text}`);
   const [hasMounted, setHasMounted] = useState(false);
   const downloadAsPDF = () => {
@@ -109,33 +115,35 @@ const Editor = ({ generatedDocument, setCurrentScreen }) => {
     );
   }
 
-  return (
-    <>
-      <div className="max-w-[600px] w-full h-full flex flex-col items-center gap-4">
-        <ReactQuill
-          className="h-96 w-full"
-          theme="snow"
-          value={content}
-          onChange={setContent}
-        />
+  if (hasMounted) {
+    return (
+      <>
+        <div className="max-w-[600px] w-full h-full flex flex-col items-center gap-4">
+          <ReactQuill
+            className="h-96 w-full"
+            theme="snow"
+            value={content}
+            onChange={setContent}
+          />
 
-        <div className="w-full flex justify-between text-sm">
-          <button
-            className="bg-main h-[40px] rounded-sm px-4"
-            onClick={() => setCurrentScreen("home")}
-          >
-            Go Back
-          </button>
-          <button
-            className="bg-main h-[40px] rounded-sm px-4"
-            onClick={downloadAsPDF}
-          >
-            Download as PDF
-          </button>
+          <div className="w-full flex justify-between text-sm">
+            <button
+              className="bg-main h-[40px] rounded-sm px-4"
+              onClick={() => setCurrentScreen("home")}
+            >
+              Go Back
+            </button>
+            <button
+              className="bg-main h-[40px] rounded-sm px-4"
+              onClick={downloadAsPDF}
+            >
+              Download as PDF
+            </button>
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  }
 };
 
 const HomeScreen = ({ setGeneratedDocument, setCurrentScreen }) => {
