@@ -1,6 +1,6 @@
 # SwiftDocs Documentation
 
-![SwiftDocs Logo](https://github.com/onadan/SwiftDocs/assets/44163985/f7f18565-3cd9-4405-a40c-553e89aa5aea)
+![SwiftDocs Logo](https://github.com/onadan/SwiftDocs/assets/44163985/acf4e673-3b23-4d03-ad39-2374c58ec15b)
 
 ## Table of Contents
 
