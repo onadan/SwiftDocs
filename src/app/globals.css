@@ -6,3 +6,7 @@ body {
   color: #f2f4f9;
   background: #000;
 }
+
+.quill  .ql-container{
+  max-height: calc(100% - 42px);
+}
