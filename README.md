@@ -17,7 +17,6 @@
 ## Introduction
 
 SwiftDocs is a revolutionary documentation platform designed to simplify and enhance project management and teamwork. This cutting-edge tool automates the creation of product, system, and requirement documentation, allowing you to focus on achieving your project goals.
-![default-monochrome-white](https://github.com/onadan/SwiftDocs/assets/44163985/3ffca912-e79e-402b-8928-6154a4eda4e3)
 
 Say goodbye to the chaos of managing documentation. SwiftDocs is here to streamline your workflow and facilitate collaboration.
 
