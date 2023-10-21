@@ -1,6 +1,6 @@
 # SwiftDocs Documentation
 
-![SwiftDocs Logo](insert-link-to-logo-image)
+![SwiftDocs Logo](C:\Users\Owner\Desktop\SwiftDocs-logo\vector)
 
 ## Table of Contents
 
@@ -77,7 +77,7 @@ SwiftDocs envisions several developments for the future, including:
 
 To install SwiftDocs, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your/repo.git`
+1. Clone the repository: `git clone https://github.com/onadan/SwiftDocs.git`
 2. Install dependencies: `npm install`
 
 ## Configuration
