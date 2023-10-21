@@ -1,7 +1,5 @@
 # SwiftDocs Documentation
 
-![SwiftDocs Logo](https://github.com/onadan/SwiftDocs/assets/44163985/acf4e673-3b23-4d03-ad39-2374c58ec15b)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -82,22 +80,22 @@ To install SwiftDocs, follow these steps:
 
 ## Configuration
 
-Configure SwiftDocs by modifying the `config.js` file. You'll need to set up API keys and other environment-specific configurations.
+Configure SwiftDocs by modifying the `.env` file. You'll need to set up API keys and other environment-specific configurations.
+
+```bash
+NEXT_PUBLIC_OPENAI_API_KEY=chatgpt_api_key
+NEXT_PUBLIC_OPENAI_API_ENDPOINT=https://api.openai.com/v1/completions
+```
 
 ## Usage
 
 Start SwiftDocs with the following command:
-
 ```
-npm start
+npm run dev
 ```
 
 Access the platform in your web browser at [http://localhost:3000](http://localhost:3000).
 
-## Contributing
+You can checkout the live version at [https://swift-docs.vercel.app/](https://swift-docs.vercel.app/)
 
-To contribute to SwiftDocs, please follow our [Contributing Guidelines](CONTRIBUTING.md).
 
-## License
-
-SwiftDocs is released under the [MIT License](LICENSE).
