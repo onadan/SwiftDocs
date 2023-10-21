@@ -33,9 +33,7 @@ Say goodbye to the chaos of managing documentation. SwiftDocs is here to streaml
 SwiftDocs leverages a robust stack of technologies:
 
 - **Next.js**: A leading React framework that ensures a lightning-fast, responsive user interface.
-- **App Router**: An advanced routing system simplifying navigation within the platform.
 - **OpenAI API**: Enhances documentation processes with AI-driven content generation, summarization, and analysis.
-- **Modern Web Technologies**: Including HTML, CSS, and JavaScript for an intuitive and user-friendly interface.
 - **Cloud Infrastructure**: Hosted on scalable cloud infrastructure for reliability and availability.
 
 ## User Impact
