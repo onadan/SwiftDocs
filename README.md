@@ -1,3 +1,5 @@
+#### NB: This project was an entry for Bincom Hackathon
+
 # SwiftDocs Documentation
 
 ## Table of Contents
